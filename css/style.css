@@ -1,0 +1,34 @@
+body html{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px auto 150px;
+}
+
+.header{
+    background-color: #FFF;
+    grid-row: 1;
+}
+
+.content{
+    background-color: #d7d9e2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.content .displayedVideo{
+    grid-column: 1;
+    width: 100%;
+}
+.content .displayedVideo iframe{
+    width: 100%;
+    margin: 10px;
+}
+
+.footer{
+    background-color:  #FFF;
+    grid-row: 3;
+}
