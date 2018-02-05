@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,57 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Youtube clone</title>
 </head>
+
 <body>
-    <script src="js/index.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/client.js?onload=onClientLoad"></script>
-    </head>
-    <body>
         <div class="container">
             <div class="header">
                 <div class="logo">
-    
+
                 </div>
                 <div class="searchBox">
-    
+                    <form action="">
+                        <input id='input' type="text" placeholder="Rechercher">
+                        <button type ="button" class="submit">Rechercher</button>
                 </div>
             </div>
-    
+
             <div class="content">
                 <div class="displayedVideo">
-                    hi there
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mWPB2AcF13A?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mWPB2AcF13A" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="videosList">
-    
+                <div class="video-list">
+                    <ul>
+                        <li class="video-list__item">
+                            <img class="video__image" src="img/sample/nature11.jpg" alt="">
+                            <img class="video-list--status" src="img/pause.png" alt="">
+                        </li>
+                        <li class="video-list__item">
+                            <img class="video__image" src="img/sample/nature12.jpg" alt="">
+                            <img class="video-list--status" src="img/pause.png" alt="">
+                        </li>
+                        <li class="video-list__item">
+                            <img class="video__image" src="img/sample/nature13.jpg" alt="">
+                            <img class="video-list--status" src="img/pause.png" alt="">
+                        </li>
+                        <li class="video-list__item">
+                            <img class="video__image" src="img/sample/nature14.jpg" alt="">
+                            <img class="video-list--status" src="img/pause.png" alt="">
+                        </li>
+                        <li class="video-list__item">
+                            <img class="video__image" src="img/sample/nature15.jpg" alt="">
+                            <img class="video-list--status" src="img/pause.png" alt="">
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="footer">
-    
+
             </div>
             <pre id="response"></pre>
         </div>
+        <script src="js/index.js" type="text/javascript"></script>
     </body>
-</body>
+
 </html>

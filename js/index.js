@@ -1,3 +1,9 @@
+const input= document.getElementById('input');
+const searchButton= document.querySelector('button[type="button"]');
+//console.log(input);
+//console.log(searchButton);
+
+
 // Your use of the YouTube API must comply with the Terms of Service:
 // https://developers.google.com/youtube/terms
 

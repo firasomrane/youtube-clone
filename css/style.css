@@ -22,10 +22,43 @@ body html{
 .content .displayedVideo{
     grid-column: 1;
     width: 100%;
+    
 }
 .content .displayedVideo iframe{
-    width: 100%;
+    width: 85%;
     margin: 10px;
+    height: 420px;
+}
+.content .video-list {
+    grid-column: 2;
+    width: 70%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+}
+li.video-list__item{
+    position: relative;
+    height: 100px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.video-list__item .video__image{
+    height: 100%;
+    width: 100%;
+}
+
+img.video-list--status{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    /* the width and the heigh is known for the element so a solution from css tricks is to set top
+    and lest to 50% and add negative margins = -half of height/width
 }
 
 .footer{
