@@ -15,50 +15,66 @@ body html{
 
 .content{
     background-color: #d7d9e2;
+    width: 100%;
     grid-row: 2;
-    display: grid;
-    grid-template-columns: 65% 35%;
+    /*display: grid;
+    /*grid-template-columns: 65% 35%;*/
+    display: flex;
+    flex-direction: row;
 }
 .content .displayedVideo{
-    grid-column: 1;
-    width: 100%;
-    
+    margin-left: 50px;
+    /*grid-column: 1;*/
+    width: 720px;
+    height: 405px;
+    margin-right: 40px;
 }
 .content .displayedVideo iframe{
-    width: 85%;
+    cursor: pointer;
+    width: 100%;
     margin: 10px;
-    height: 420px;
+    height: 100%;
 }
 .content .video-list {
-    grid-column: 2;
-    width: 70%;
+    /*grid-column: 2;*/
+    width: 290px;
     margin-right: 30px;
-    margin-bottom: 20px;
 }
 ul {
     list-style: none;
+    margin-top:10px;
 }
 li.video-list__item{
     position: relative;
     height: 100px;
     width: 60%;
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 120px 15px 155px;
 }
-
+li div{
+    cursor: pointer;
+    grid-column: 3;
+    font-size: 17px;
+    height: 10px; /*to get the height wrap content*/
+    overflow: visible;
+}
 .video-list__item .video__image{
+    cursor: pointer;
+    grid-column: 1;
     height: 100%;
     width: 100%;
 }
 
 img.video-list--status{
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     top: 50%;
     left: 50%;
-    margin: -10px 0 0 -10px;
+    margin: -12px 0 0 -18px;
     /* the width and the heigh is known for the element so a solution from css tricks is to set top
-    and lest to 50% and add negative margins = -half of height/width
+    and lest to 50% and add negative margins = -half of height/width*/
 }
 
 .footer{

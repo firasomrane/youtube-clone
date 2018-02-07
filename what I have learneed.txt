@@ -1,6 +1,7 @@
 from where I got the idea
 https://ytinstant.com/#Shakira
 
+****************************************************
 ressources:https://developers.google.com/youtube/v3/getting-started
 https://www.codecademy.com/fr/courses/javascript-intermediate-en-757J2/0/2?curriculum_id=50ecb8d45f787a6332000042
 
@@ -26,7 +27,7 @@ part:snippet ===> return a more documented return
 
 The q parameter specifies the query term to search for.
 
-
+*************************************************************************
 read this to know how to run a code froma web server
 https://gist.github.com/jgravois/5e73b56fa7756fd00b89
 or this from MDN
@@ -58,3 +59,17 @@ to ignore an extension *.txt
 to ignore a folder folderName/
 https://medium.com/@haydar_ai/learning-how-to-git-ignoring-files-and-folders-using-gitignore-177556afdbe3
 ************************
+always place the script tag in the head section and add the attributes differ and async or at the bottom
+refer to this https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup
+************************
+to get an element wrap content for click purpose for example
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_overflow
+height: 10px; /*set the width as little as you can*/
+overflow: visible; /*but set the overflow visible*/
+
+*****************************************************
+
+to remove an element
+element.parentNode.removeChold(element);
+or
+element.remove() //dont work on IE
