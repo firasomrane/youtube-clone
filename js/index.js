@@ -31,7 +31,8 @@ previousVideoIndex= 0;
 //window.onload= getDOMElements;
 function getDOMElements(){
     searchField= document.getElementById('input');
-    searchButton= document.querySelector('button[type="button"]');
+    /* searchButton= document.querySelector('button[type="button"]'); */
+    searchButton= document.getElementById('search-icon');
     displyedVideo= document.querySelector('.displayedVideo');
     videoListUl= document.querySelector('.video-list ul');
     //console.log(videoListUl)
@@ -106,7 +107,7 @@ function showResponse(response) {
 function showMainVideo(index) {
     const firstVideoObject= videoArray[index];
     const mainVideo= createVideoiFrame();
-    const videoSrc = `https://www.youtube.com/embed/${firstVideoObject.id.videoId}?autoplay`;
+    const videoSrc = `https://www.youtube.com/embed/${firstVideoObject.id.videoId}?autoplay=1`;
     mainVideo.setAttribute('src', videoSrc);
     //console.log(mainVideo);
     displyedVideo.innerHTML = "";
@@ -203,5 +204,8 @@ function addStatusImage(){
 
 function removeOldStatusImage(){
     const previousStatusImage= document.querySelector(`img.video-list--status`);
-    previousStatusImage.parentElement.removeChild(previousStatusImage);
+    if(previousStatusImage){
+        previousStatusImage.parentElement.removeChild(previousStatusImage);
+    }
+    
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="img/favicon.jpg"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"> 
     <title>Youtube clone</title>
 </head>
@@ -18,9 +19,13 @@
 
                 </div>
                 <div class="searchBox">
-                    <form action="">
+                    <form onSubmit="return false;">
+                        <!-- <input type="text" name="search-word" id="search-input" placeholder="Search    " required>
+                        <i id ="search-icon" class="fa fa-search" aria-hidden="true"></i> -->
+
                         <input id='input' type="text" placeholder="Rechercher">
-                        <button type ="button" class="submit">Rechercher</button>
+                        <i id ="search-icon" class="fa fa-search" aria-hidden="true"></i>
+                        <!-- <button id ="search-icon" type ="button" class="submit"><i id ="search-icon" class="fa fa-search" aria-hidden="true"></i></button> -->
                 </div>
             </div>
 
